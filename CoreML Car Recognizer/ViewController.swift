@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     }
     
     func predict(image: CGImage) {
-        let model = try! VNCoreMLModel(for: CarRecognition().model)
+        let model = try! VNCoreMLModel(for: CarRecognition().fritz().model)
         let request = VNCoreMLRequest(model: model, completionHandler: results)
         let handler = VNSequenceRequestHandler()
         try! handler.perform([request], on: image)

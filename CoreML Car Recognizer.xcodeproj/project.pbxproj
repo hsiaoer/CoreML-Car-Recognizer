@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA2C735202A4DCC00CDF581 /* CarRecognition+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2C734202A4DCC00CDF581 /* CarRecognition+Fritz.swift */; };
+		7F30A303A3BE26E02A24A8C9 /* Pods_CoreML_Car_Recognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F373E1A230F117CBD9FF8CB /* Pods_CoreML_Car_Recognizer.framework */; };
 		ED32C13620010C7700C991D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32C13520010C7700C991D5 /* AppDelegate.swift */; };
 		ED32C13820010C7700C991D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32C13720010C7700C991D5 /* ViewController.swift */; };
 		ED32C13B20010C7700C991D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED32C13920010C7700C991D5 /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E9B2A490731F7C1C94A1210 /* Pods-CoreML Car Recognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreML Car Recognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreML Car Recognizer/Pods-CoreML Car Recognizer.debug.xcconfig"; sourceTree = "<group>"; };
+		29DC58E4465C4A22C8FBFBA3 /* Pods-CoreML Car Recognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreML Car Recognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreML Car Recognizer/Pods-CoreML Car Recognizer.release.xcconfig"; sourceTree = "<group>"; };
+		5FA2C734202A4DCC00CDF581 /* CarRecognition+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarRecognition+Fritz.swift"; sourceTree = "<group>"; };
+		8F373E1A230F117CBD9FF8CB /* Pods_CoreML_Car_Recognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreML_Car_Recognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED32C13220010C7700C991D5 /* CoreML Car Recognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML Car Recognizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED32C13520010C7700C991D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED32C13720010C7700C991D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F30A303A3BE26E02A24A8C9 /* Pods_CoreML_Car_Recognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A570827E27060833E046BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F373E1A230F117CBD9FF8CB /* Pods_CoreML_Car_Recognizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E0689DDBD52F7AA255B05E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E9B2A490731F7C1C94A1210 /* Pods-CoreML Car Recognizer.debug.xcconfig */,
+				29DC58E4465C4A22C8FBFBA3 /* Pods-CoreML Car Recognizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED32C12920010C7700C991D5 = {
 			isa = PBXGroup;
 			children = (
 				ED32C13420010C7700C991D5 /* CoreML Car Recognizer */,
 				ED32C13320010C7700C991D5 /* Products */,
+				8E0689DDBD52F7AA255B05E3 /* Pods */,
+				23A570827E27060833E046BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				ED32C13C20010C7700C991D5 /* Assets.xcassets */,
 				ED32C13E20010C7700C991D5 /* LaunchScreen.storyboard */,
 				ED32C14120010C7700C991D5 /* Info.plist */,
+				5FA2C734202A4DCC00CDF581 /* CarRecognition+Fritz.swift */,
 			);
 			path = "CoreML Car Recognizer";
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED32C14420010C7700C991D5 /* Build configuration list for PBXNativeTarget "CoreML Car Recognizer" */;
 			buildPhases = (
+				4E16BCF4FD3185B7ECF693E9 /* [CP] Check Pods Manifest.lock */,
 				ED32C12E20010C7700C991D5 /* Sources */,
 				ED32C12F20010C7700C991D5 /* Frameworks */,
 				ED32C13020010C7700C991D5 /* Resources */,
+				531A41629261593E905ACA0D /* [CP] Embed Pods Frameworks */,
+				A1A6083CF1307F7B79D602B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E16BCF4FD3185B7ECF693E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreML Car Recognizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531A41629261593E905ACA0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreML Car Recognizer/Pods-CoreML Car Recognizer-frameworks.sh",
+				"${PODS_ROOT}/Fritz/Framework/Fritz.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreML Car Recognizer/Pods-CoreML Car Recognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A6083CF1307F7B79D602B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreML Car Recognizer/Pods-CoreML Car Recognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED32C12E20010C7700C991D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +225,7 @@
 			files = (
 				ED32C13820010C7700C991D5 /* ViewController.swift in Sources */,
 				ED32C13620010C7700C991D5 /* AppDelegate.swift in Sources */,
+				5FA2C735202A4DCC00CDF581 /* CarRecognition+Fritz.swift in Sources */,
 				ED32C14820010E5A00C991D5 /* CarRecognition.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +361,7 @@
 		};
 		ED32C14520010C7700C991D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9B2A490731F7C1C94A1210 /* Pods-CoreML Car Recognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +378,7 @@
 		};
 		ED32C14620010C7700C991D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DC58E4465C4A22C8FBFBA3 /* Pods-CoreML Car Recognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
